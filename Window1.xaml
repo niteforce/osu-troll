@@ -1,0 +1,27 @@
+﻿<Window x:Class="osu_troll.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:wpfAnimatedGif="clr-namespace:WpfAnimatedGif"
+        mc:Ignorable="d"
+        Title="HiTCirkle:_One" Height="275.714" Width="252.679" WindowStartupLocation="Manual" Margin="0" Left="250"
+        Top="500" Background="Black">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*" />
+            <ColumnDefinition Width="93*" />
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="gif1" wpfAnimatedGif:ImageBehavior.AnimatedSource="Resources/head2.gif" Grid.ColumnSpan="2">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Resources/head2.gif" Stretch="Uniform" />
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="image2" Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Left" Height="245"
+               VerticalAlignment="Top" Width="245" />
+
+
+    </Grid>
+</Window>
